@@ -88,6 +88,9 @@ Blob.prototype.hoursToOoze = function(population, peoplePerHour) {
 assert(blob.hoursToOoze(0, 1) === 0, 'no people means no time needed.');
 assert(blob.hoursToOoze(1000, 1) === hoursSpentInDowington,
   'hoursSpentInDowington should match hoursToOoze\'s result for 1000');
+assert(blob.hoursToOoze(5, 5) === 1, 'wrong');
+assert(blob.hoursToOoze(15, 5) === 3, 'wrong again');
+assert(blob.hoursToOoze(22, 1) === 7, 'wrong again again');
 
 // TODO: write three more assertions like the two above, testing out
 // the hoursToOoze method.
